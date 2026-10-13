@@ -8,7 +8,7 @@ services:
             # builds an image that has no manifest to install from.
             context: ../..
             dockerfile: docker/dev/Dockerfile
-        container_name: phue-app
+        container_name: phue_app
         user: "1000:1000"
         network_mode: host
         volumes:
@@ -34,7 +34,7 @@ services:
             - COMPOSER_HOME=/tmp/.composer
     redis:
         image: redis:7-alpine
-        container_name: phue-app-redis
+        container_name: phue_redis
         ports:
             - "6379:6379"
 

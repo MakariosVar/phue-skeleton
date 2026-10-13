@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+$autoload = __DIR__ . '/vendor/autoload.php';
+if (!file_exists($autoload)) {
+    fwrite(STDERR, "Please run 'composer install' before executing phue." . PHP_EOL);
+    exit(1);
+}
+
+require $autoload;
+require __DIR__ . '/vendor/makariosvar/phue/bin/phue';

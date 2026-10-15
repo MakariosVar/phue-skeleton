@@ -20,6 +20,7 @@ Alternatively, clone the skeleton repository directly:
 ```bash
 git clone https://github.com/MakariosVar/phue-skeleton.git my-app
 cd my-app
+rm -rf .git # to remove skeleton repo vcs
 composer install
 ```
 
